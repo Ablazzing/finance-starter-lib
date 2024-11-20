@@ -5,13 +5,34 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.javaacademy</groupId>
-    <artifactId>finance-starter</artifactId>
+    <artifactId>finance-starter-lib</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>finance-starter</module>
+        <module>finance-app</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.34</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>3.3.5</version>
+        </dependency>
+    </dependencies>
+
+
 </project>
